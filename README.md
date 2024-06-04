@@ -24,6 +24,7 @@ The below figures shows the exploration of the files. "Sky130 pdk" has lib.ref w
 
 <img src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/178fd269-c15e-4923-92e0-3faee4aa126f" width="600" />
 
-
-
+![image](https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/f55bac9a-a9d5-49d4-8927-ddde01a936d4)
+![image](https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/c151c991-e6e0-41ca-b549-34edef8326ef)
+![image](https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/b77677c9-227a-4514-9641-edcffd56131b)
 
