@@ -129,9 +129,11 @@ By selecting the required iopin, you can see the metal information on tkcon.tcl 
 <p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/c9f34dec-7f6d-4ebf-8d78-316e73045a33"></p>
 We can see decap cell, vertical and horizontal pins, tap cells and the standard cells which is not placed yet. Tap cells help in avoiding the latchup condition.
 <p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/625df688-1ce0-4d72-a235-00ddd705d5d5"></p>
+
 **Placement:**
 1)	Global placement – reducing the wire length. We are focusing on reduction of Half parameter wire length(HPWL)
 2)	Detailed placement(legalization) more required from timing point of view and takes care of not over lapping the design.
+   
 **After “run_floorplan”:**
 9)	Run_placement
 
