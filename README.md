@@ -149,10 +149,100 @@ Placement is where the standard cell position get fixed. As you can see the layo
 
 <p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/45d27823-bd9e-4076-99c9-a27779c2ae1e"></p>
 
-
 ## Design library cell using Magic Layout and ngspice characterization
 
+Taking “Inverter”  as an example.  The inverters .magic file is obtained from the GitHub repository and we are doing the post layout simulation in ngspice and post characterizing the cell. This cell will be plugged into the picorv32 core. 
+
 #### LabWork
+Clone the following Git repository to obtain the inverter layout:
+Github link: https://github.com/nickson-jose/vsdstdcelldesign
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/334928cb-06db-44d9-9b23-0de416b9f531"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/c758e962-ef18-4a62-9def-ba146fbdeb81"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/08d23485-577b-4b8a-9060-716154b42d2e"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/a71651eb-091f-4487-a439-12dcde785798"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/a71651eb-091f-4487-a439-12dcde785798"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/d5c3c433-61a9-4b59-af6e-26f833b6a80e"></p>
+To check the logical function of this inverter, extracting the layout into spice netlist.
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/3a13a2a1-4dbb-49c7-9041-a34f06a6c28f"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/2a7786d1-46f2-488e-ad11-5f1f392b1d91"></p>
+
+The spice file contains:
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/56074265-7b11-404d-ba03-017eb2d841e8"></p>
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/58d154fa-c6a7-4efc-83ff-11e210ab1cb5"></p>
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/d7cc402b-81c6-42b6-a851-948d7fd30db6"></p>
+Make the required changes to the converted spice code model.
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/017b63c7-fefd-4016-8c0a-54f4b519f675"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/2d4c4d49-e79f-4994-a0fc-e72d890a5c52"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/af24fe3b-46e4-48d6-8d1d-99afde63f80b"></p>
+
+**Calculation:**\
+**output voltage**= 3.3v\
+20% of 3.3 = 0.66v\
+80% of 3.3 = 2.64v\
+50% of 3.3 = 1.65v\
+**Rise transition**(20% - 80%): 2.24601(80%) - 2.1825(20%)  = 0.064ns\
+**Fall transition**(80% - 20%): 4.09492(20%) – 4.05304(80%) = 0.041ns\
+**Rise cell delay**: 2.21167 – 2.14956 = 0.062ns\
+**Fall cell delay**:  4.07797 – 4.05 = 0.02797ns
+
+The following exercise is about learning DRC  error and fix.
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/cbfd1c27-886d-460a-b5e0-d7c33d4d8c59"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/a133b568-9de7-4e73-9a60-6d1a62b4a0e1"></p>
+.magicrc file is loading the local version of tech file.
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/0ccbe29f-5c7b-429c-a209-3686d624af30"></p>
+
+Magic opens after giving the ‘magic -d xr” command. To open the met3 example, File-> open -> select “Met3.mag”. The independent geometries (m3.1,m3.2,m3.5,m3.6, and m3.3d) displayed shows some kind of DRC error (white patches in the geometry). The rules for each metal is given in “skywater pdk” document.
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/8dfefa2f-ca70-4fe3-80c7-92f2bc7bb7ee"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/1afc6f17-bc36-4a6c-9178-9af060e6f6b6"></p>
+
+Select the required metal and type “ drc why” to see errors.
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/33d061ee-8848-4a19-8e96-11db5feec8a0"></p>
+
+To paint any layer, use tcl window or paint options on the right corner of the layout screen. First, select the area by creating a box. In tcl window, type “paint <layer>” or select the required option from the right corner and press the middle button of the mouse. Can measure the width of the selected area by typing “box” in the tcl window.” Snap int” will help in moving the box and aligning it with the required area.
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/ee448eea-9b64-46d8-a4a2-f6d475d7419d"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/e900846d-dc6b-4397-84d3-503240c3e95f"></p>
+The following is “poly.mag”.
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/c73a3344-cad3-4326-871b-877b4dfc795d"></p>
+Need to check the drc rules in the tech file. Open the file and search for “poly.9”. See the available rules. Add the required rules and save it.
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/952c3229-c046-4787-95a0-4c425632f6fe"></p>
+**Before:**
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/8fe51900-74ef-4916-8436-600cca01a507"></p>
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/15c9e0e4-300c-4b4e-a341-174f324b7784"></p>
+**After:**
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/6aa339ca-635b-497e-9415-f5aff2b9ea39"></p>
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/16caacf1-e1a6-47e9-aee0-701cb2354ef4"></p>
+
+We can see the error flagged by showing white patches.
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/5688d1ba-d189-4b2f-a386-fcf60ff32857"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/39a38e52-b63c-4362-990d-0d7708a6afbf"></p>
+**Before:**
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/23424f6f-8ece-4169-b74f-74dd9ff9490f"></p>
+**After:**
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/11aebb28-af7f-4a95-8515-cbd0d4bc108b"></p>
+
+After the changes, load the file again and the error patches are now detectable.
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/98870d80-06c7-4aa2-9ec7-c9f0ed64ed0a"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/7be6bdd8-83ae-4fe4-989b-d277134a3425"></p>
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/b76442fd-9b86-4915-a885-47b1ed037b01"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/8d6d3ae0-b288-4a32-824b-b9a065b56af4"></p>
+Added the highlighted part.
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/b293c5aa-7fc5-4a32-b3d5-f03f8b915ba6"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/85f79ee8-7b4b-4671-b681-11130dabeb36"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/89c09ddc-a30a-422c-bade-f41fc7dc9676"></p>
+Save it and now check. The error seen as white patches.
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/b353bfe3-2c5d-4419-8733-7485fc31ccfa"></p>
+Add contact and error will disappear.
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/7f9e2fab-bab5-4ca1-a7f3-0dec03e3ae92"></p>
 
 ## Pre-layout timing analysis and importance of good clock tree
 
