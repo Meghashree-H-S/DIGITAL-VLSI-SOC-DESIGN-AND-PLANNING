@@ -397,18 +397,109 @@ Including the larger size clock buffer in the clock path has improved the result
 <p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/de67eb93-37de-49da-8704-364f806bc037"></p>
 
 
-
-
-
-
-
-
-
-
-
-
-
 ## Final steps for RTLGDS using tritonRoute and openSTA
 
 
+
+
 #### LabWork
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/5baed693-0c98-4a18-ba2b-9948399d66a3"></p>
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/89d001b4-75a8-46ed-8257-f303f187df08"></p>
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/2f03adfa-7d2a-46ae-975c-09689a3feea4"></p>
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/6222e66c-c9a2-43da-af83-232ecae64344"></p>
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/4baad3a3-2074-41fa-9bb4-67072287cb36"></p>
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/bb53da6b-ce85-4663-b715-95c72776b878"></p>
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/30688fb7-c1fc-4cce-a443-20b8abaa3d9b"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/71df2fb9-560c-4235-9460-529fc9b7da66"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/130a459d-489d-4205-99ed-4f4b8a9108fd"></p>
+The number of the cell can be found in 
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/23da9258-756d-438b-b83b-efaecea8cf1a"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/0d5037f7-ebe6-4fdf-9e78-994155c49b1c"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/541ddc94-2a45-44b3-8b0d-c386a3d61c83"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/02de8bfd-ae6e-41c1-89ae-fcbe397b755f"></p>
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/7aa1189c-fc44-4c04-894d-0cb4aa5c4aab"></p>
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/762bd073-afd3-4dc0-8357-9b9520af903c"></p>
+
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/4789daf1-5745-4b90-8c9b-6769a47eae03"></p>
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/f199f7f8-9a04-4314-ab79-88a11dc18ffb"></p>
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/cf25c7b5-2db8-4491-bb9d-46ec61f5a635"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/a9f995b4-e405-4551-b37b-d1d1e3f3cc78"></p>
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/49ae4d4e-3ee8-421f-950c-eab2c546acb8"></p>
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/19af0851-8fdc-4d2b-bad1-ffef92db00c0"></p>
+
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/942a3f27-1526-48fc-8649-7edee9348bf1"></p>
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/4eaca097-2903-47f5-99d1-6b0f347d7de4"></p>
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/92d48843-bf33-49d1-889d-09cb5090c19e"></p>
+
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/d62315d2-f8c3-479d-8f99-f346bfa9d65c"></p>
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/d5f1e065-9e46-4860-9f5e-3d13c84d98f8"></p>
+
+
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/41db76c6-2604-45fd-879f-e434d70e9f6a"></p>
+
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/af0d6bbd-397f-4d8c-98b0-8aa228e1b349"></p>
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/b5a8f9e4-83ea-42f0-a555-beba327d8490"></p>
+
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/42e8f414-d6d8-4b69-bcfc-bc866c9450f4"></p>
+
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/30868f29-c823-40d6-ab6b-f90ba3294de8"></p>
+
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/6974c2c1-e5c8-44e7-9341-e25bf7198503"></p>
+
+
+**Reference:**
+1)	https://openlane2.readthedocs.io/en/latest/getting_started/newcomers/index.html#what-is-openlane 
+2)	https://www.tomshardware.com/reviews/glossary-soc-system-on-chip-definition,5890.html 
+3)	https://riscv.org/about/ 
+4)	https://github.com/google/skywater-pdk 
+5)  https://github.com/efabless/openlane2
+6)	[Open Magic](http://opencircuitdesign.com/magic/)
+7) [ngspice](https://ngspice.sourceforge.io/)
+8) [efabless](https://github.com/efabless/caravel)
+9) [Google Skywater pdk](https://github.com/google/skywater-pdk/tree/main/libraries)
+10) [openLane](https://github.com/The-OpenROAD-Project/OpenLane/tree/master)
+11) [Welcome to SkyWater SKY130 PDK’s documentation!—SkyWater SKY130 PDK 0.0.0-369-g7198cf6 documentation (skywater-pdk.readthedocs.io)](https://skywater-pdk.readthedocs.io/en/main/))
+
+
+
+
+**Acknowledgements:**
+- Kunal Ghosh, co-founder of VLSI System Design (VSD) Corp. Pvt. Ltd.
+- Nickson P Jose, Physical Design Engineer, Intel Corporation.
+- R. Timothy Edwards, Senior Vice President of Analog and Design, efabless Corporation.
+- Mohamed Shalan, Head of the EDA/IC Design Team at Efabless.
+  
+
+
+
+
+
+
+
+
+
