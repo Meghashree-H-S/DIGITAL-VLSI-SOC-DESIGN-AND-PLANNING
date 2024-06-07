@@ -5,11 +5,11 @@ $${\color{blue}This \space workshop \space provides \space a \space theoretical 
 <p align="center" width="100%"><img src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/e62a2dc3-fbc5-4dcc-a1b3-f4d48e177d4a" width="400" height="300" title="ASICFlow" /></p>
 
 ## INDEX
-- ['Inception of open source EDA, OpenLANE and SKY130PDK'](#day1)
-- ['Goodfloorplan vs bad floorplan and introduction to library cells'](#day2)
-- ['Design library cell using Magic Layout and ngspice characterization'](#day3)
-- ['Pre-layout timing analysis and importance of good clock tree'](#day4)
-- ['Final steps for RTLGDS using tritonRoute and openSTA'](#day5)  
+- [`Inception of open source EDA, OpenLANE and SKY130PDK`](#day1)
+- [`Goodfloorplan vs bad floorplan and introduction to library cells`](#day2)
+- [`Design library cell using Magic Layout and ngspice characterization`](#day3)
+- [`Pre-layout timing analysis and importance of good clock tree`](#day4)
+- [`Final steps for RTLGDS using tritonRoute and openSTA`](#day5)  
 
 **Languages**: Verilog, Tcl, Bash, Linux commands\
 **EDA Tools**: OpenLANE, magic, OpenROAD, ngspice\
