@@ -1,6 +1,3 @@
-# $${\color{red} Work \space under \space progress \space...............!!!!!}$$
-
-
 # $${\color{grey}DIGITAL \space VLSI \space SOC \space DESIGN \space AND \space PLANNING \space}$$
 
 $${\color{blue}This  \space is  \space a \space  \space two  \space week  \space RTL2GDSII  \space flow  \space workshop  \space organized  \space by  \space VSD  \space in  \space collaboration  \space with  \space NASSCOM.}$$
