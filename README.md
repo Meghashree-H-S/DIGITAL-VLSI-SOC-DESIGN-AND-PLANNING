@@ -5,17 +5,20 @@ $${\color{blue}This \space workshop \space provides \space a \space theoretical 
 <p align="center" width="100%"><img src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/e62a2dc3-fbc5-4dcc-a1b3-f4d48e177d4a" width="400" height="300" title="ASICFlow" /></p>
 
 ## INDEX
-- [`Inception of open source EDA, OpenLANE and SKY130PDK`](#day1)
+- [`inception of open source EDA, OpenLANE and SKY130PDK`](#day1)
 - [`Goodfloorplan vs bad floorplan and introduction to library cells`](#day2)
 - [`Design library cell using Magic Layout and ngspice characterization`](#day3)
 - [`Pre-layout timing analysis and importance of good clock tree`](#day4)
-- [`Final steps for RTLGDS using tritonRoute and openSTA`](#day5)  
+- [`Final steps for RTLGDS using tritonRoute and openSTA`](#day5)
+
+
+
 
 **Languages**: Verilog, Tcl, Bash, Linux commands\
 **EDA Tools**: OpenLANE, magic, OpenROAD, ngspice\
 **Operating system**: Ubuntu
 
-## Inception of open source EDA, OpenLANE and SKY130PDK
+## Inception of open source EDA, OpenLANE and SKY130PDK <a id='day1'></a>
 SoC (System on chip) are used in many electronic systems or components such as smart phone, smart TV, smart watches, etc.. SoC can use Microcontroller, Microprocessor or Application specific Integrated circuit(ASIC) [2].Arduino board can be taken as one example which has the chip. The chip needs to be designed and planned which involves several steps that includes RTL to GDSII flow, later the chip will be fabricated. The main components of chip are Pads (used for signal transmission), Core(has logic gates), and Die (Size of the chip). 
 <p align="center" width="100%"><img src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/884aacb1-7123-43bb-9433-5e6d8a1d3964" width="425"></p>
 
@@ -43,6 +46,7 @@ OpenLane is a flow that uses open source tools to achieve a tapeout of a chip. T
 
 <p align="center" width="100%"><img width="438" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/a56905bb-fb98-405f-a666-0ebc60dec93c"></p>
 
+## Feature
 #### LabWork
 In this section, we prepare design, run synthesis, and calculate the Flip ratio.  We can check the clock period values in the  “config.tcl” and “sky130A_sky130_fd_sc_hd_config.tcl”. The values can be changed in these folders but as you see there are two different clock period values (5ns and 24.73). Each file, sets the value differently, but the values set in the “sky130A_sky130_fd_sc_hd_config.tcl” file is considered first. “picorv32a” design is used to run the openLane flow.
 <p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/7da11655-534c-46c2-b7a2-852c1b8467d6"></p>
@@ -76,7 +80,7 @@ Number of D Flip Flops (DF) = 1613\
 **Flop Ratio**  =  DF/T =1613/14876 = 0.108\
 **Flop percentage** = Flop Ratio * 100 = 0.108 * 100 = 10.84%
 
-## Goodfloorplan vs bad floorplan and introduction to library cells
+## Goodfloorplan vs bad floorplan and introduction to library cells <a id='day2'></a>
 After Synthesis, we need to do Floor planning, where we set the die area, core area, aspect ratio, utilization factor, place in/op cells, and macro placement. Standard cells are placed in placement stage.
 
 #### LabWork
@@ -148,7 +152,7 @@ Placement is where the standard cell position get fixed. As you can see the layo
 
 <p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/45d27823-bd9e-4076-99c9-a27779c2ae1e"></p>
 
-## Design library cell using Magic Layout and ngspice characterization
+## Design library cell using Magic Layout and ngspice characterization <a id='day3'></a>
 
 Taking “Inverter”  as an example.  The inverters .magic file is obtained from the GitHub repository and we are doing the post layout simulation in ngspice and post characterizing the cell. This cell will be plugged into the picorv32 core. 
 
@@ -247,7 +251,7 @@ Save it and now check. The error seen as white patches.
 Add contact and error will disappear.
 <p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/7f9e2fab-bab5-4ca1-a7f3-0dec03e3ae92"></p>
 
-## Pre-layout timing analysis and importance of good clock tree
+## Pre-layout timing analysis and importance of good clock tree <a id='day4'></a>
 We have characterized the inverter. Next using the layout create lef file and use it in picorv32 design.
 
 #### LabWork
@@ -396,7 +400,7 @@ Including the larger size clock buffer in the clock path has improved the result
 <p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/de67eb93-37de-49da-8704-364f806bc037"></p>
 
 
-## Final steps for RTLGDS using tritonRoute and openSTA
+## Final steps for RTLGDS using tritonRoute and openSTA <a id='day5'></a>
 
 
 
