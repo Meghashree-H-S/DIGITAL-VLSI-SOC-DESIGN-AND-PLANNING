@@ -210,11 +210,13 @@ The following is “poly.mag”.
 <p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/c73a3344-cad3-4326-871b-877b4dfc795d"></p>
 Need to check the drc rules in the tech file. Open the file and search for “poly.9”. See the available rules. Add the required rules and save it.
 <p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/952c3229-c046-4787-95a0-4c425632f6fe"></p>
-**Before:**
+
+**Before:** 
 
 <p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/8fe51900-74ef-4916-8436-600cca01a507"></p>
 
 <p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/15c9e0e4-300c-4b4e-a341-174f324b7784"></p>
+
 **After:**
 <p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/6aa339ca-635b-497e-9415-f5aff2b9ea39"></p>
 
@@ -224,8 +226,10 @@ We can see the error flagged by showing white patches.
 
 <p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/5688d1ba-d189-4b2f-a386-fcf60ff32857"></p>
 <p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/39a38e52-b63c-4362-990d-0d7708a6afbf"></p>
+
 **Before:**
 <p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/23424f6f-8ece-4169-b74f-74dd9ff9490f"></p>
+
 **After:**
 <p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/11aebb28-af7f-4a95-8515-cbd0d4bc108b"></p>
 
@@ -245,9 +249,164 @@ Add contact and error will disappear.
 <p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/7f9e2fab-bab5-4ca1-a7f3-0dec03e3ae92"></p>
 
 ## Pre-layout timing analysis and importance of good clock tree
-
+We have characterized the inverter. Next using the layout create lef file and use it in picorv32 design.
 
 #### LabWork
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/8ab42fe8-ada0-4e3e-93fe-17cf36471c34"></p>
+Press “g” to activate the grids in the layout.
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/257d11b0-5ed0-4714-8ea8-b7a67c31c3ea"></p>
+We can confirm that the port “A” and “Y” are on the intersection of horizontal and vertical tracks of Li1. 
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/13796f30-c55e-4cb1-b502-28a278cba464"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/bb8926fd-7ea4-47bc-8030-ec96b66b9aee"></p>
+To define the port, select the port than go to Edit -> text.
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/a87c6e5f-c41e-4976-bd24-61073b705202"></p>
+Define the purpose of the port by selecting each port and setting it as input, output, signal, power, and ground. After that save the file and extract the lef file.
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/c49d7da5-d922-445d-8344-732359685a18"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/0c69c6fb-3490-4b70-b9ed-ce1516e16105"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/8144756f-151a-49cf-9d9d-4e4c24f96a52"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/97c76f4a-0ea7-4994-9f75-5ca9f1e73241"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/d440bd45-4959-4ef0-8477-af96e5b74181"></p>
+
+Following steps will be how to incorporate this lef file to picorv32:
+- Copy the lef file and tech library to design src folder, this makes file accessing easy.
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/3add2028-c0e1-4968-911a-e1805114102b"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/0f2e7305-1396-45bd-8086-1e2fec1e70b3"></p>
+
+- Modify “config.tcl” file.
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/486f28b9-20d9-4668-940c-48bc6c5cb2bb"></p>
+
+**Before:**
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/403c1048-40d9-430c-8e7b-ad16928a189d"></p>
+
+**After:**
+  <p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/bfdab522-eedb-4bd5-8f8b-10f7654db382"></p>
+
+- Design preparation and merge the lef file to the openlane flow
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/11e3ef0a-3781-4deb-9d3d-085aa3f3378f"></p>
+
+- Synthesis
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/f1aa5487-d2a5-44c8-ae07-47f416e15146"></p>
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/27565dbe-042f-424f-a039-d619762d7a7f"></p>
+
+- To reduce slack violation do some modification.
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/8878c655-3411-456a-8e3d-8869d3dc88b8"></p>
+
+Observe the timing violation.
+Wns is maximum slack
+Tns is total negative slack
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/2ac18213-5571-4efc-86b1-b80777c43b34"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/9e36d001-e22a-49b6-b17d-e84bedd5828f"></p>
+Try balancing between delay and area by making few changes. Start from prep design.
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/c58348c4-2ac8-4132-a7f4-328fef8995ac"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/3ba63c57-896c-42c8-84e7-76a152d6874a"></p>
+
+As floor plan is not completely executed using “run_floorplan” command, use the alternative command: 
+- init_floorplan
+- Place_io
+- Tap_decap_or
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/5646c199-6390-42be-b34d-cf304017288d"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/b25a1e9c-79ec-49b5-9b8d-20513f42734b"></p>
+
+- Check  “merged.lef” has the newly added inverter file.
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/061d5e5c-a342-4e22-babb-f1255138b270"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/9979653e-edbd-4123-93b0-ea3ad00541d2"></p>
+
+Now, continue with placement
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/a6814973-908e-4de0-aa7a-9b6aa4d9e8a4"></p>
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/af7ed805-14c4-4507-b973-b37358a6d02b"></p>
+
+- Check the layout
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/8fae4912-170d-4fe6-ac91-2953515b3cc9"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/a36bec62-0e5e-4502-bfc6-a98adf96feae"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/40a47b4a-67ce-496e-a78a-9450fd95ef89"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/40bb6beb-9004-44c2-afcb-d2a0044a6342"></p>
+
+- Timing Analysis carried out from a STA.
+Create “pre_sta.conf”
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/30d51f90-494c-4116-8a2b-263e0a6e117f"></p>
+ <p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/f24d32d8-d9a7-49ca-b6c4-f4f7d3c8bebb"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/c314fa37-2cd8-44b1-8d7b-e7e40cb5d429"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/8104f854-d1ac-4ba3-a59a-dff62f60490b"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/a7a8ae55-65ea-4fe2-9c93-74de13173857"></p>
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/58e0c3d9-d1c1-4819-af31-f6fd29c69bf8"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/927e7e3b-dd56-4682-aa21-201c56e6a2d7"></p>
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/d8ee6257-d95b-4ca3-aac1-1cdba44bdebf"></p>
+
+- Delay of any cell is dependent on the input transition and output load. Tryout to reduce Fanout.
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/5c3e3756-65ff-49d2-8ae2-1cf1eda65460"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/dbb39a72-be02-480d-9360-2c343cf40c4e"></p>
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/e90ffc1c-b663-47ac-8ec6-151e9d22831c"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/2165ce29-a575-41e6-bccb-0b100b253f63"></p>
+In the above method the slack is stable not violated. Trying the method shown in the training material.
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/1d18d1ba-2795-4de5-9c3c-a6888ec03708"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/1e5b1cc6-a65b-4b64-8ae1-23dccc1b5dad"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/2fe53d1b-2a3f-4082-9d20-c07587bf6412"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/cfa09cf1-f800-43ab-a9f6-7629f5ab847f"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/58a213a1-9edb-4a83-b833-a42b0d3d698c"></p>
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/9a3a063a-9bf4-49ba-a6ac-c51fe8594675"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/5993a1cb-f980-4fa4-ad1b-099cf76caa17"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/eef8d6c4-138d-4bc3-9e13-0623bd238a0c"></p>
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/09942641-9f63-4264-9a8b-e4a2c5ac0e84"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/efce228b-a9eb-4555-8e17-f95b53a8e201"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/3132c10b-b57c-4edd-adcc-9dabaa96289d"></p>
+
+Type the below command to generate custom timing report
+report_checks -from _29043_ -to _30440_ -through _14506_
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/87128044-57af-4fcd-ae68-0a46e3988389"></p>
+The slack is reduced from -23.90 to -22.6173
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/8b498762-7c9d-4fac-af37-ac0e479cd319"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/e2d3e805-9a26-4b35-840d-70497d63f3cd"></p>
+
+Will continue with floorplan after synthesis. 
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/b4da1a78-4373-4486-977c-8bf0ac3965ae"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/0cf079cc-6e8e-47fc-87a2-557b92004028"></p>
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/b39be286-7c5f-45fe-a32b-835637278cdf"></p>
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/e45c5aca-f560-463c-9b16-12275001e0c0"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/0e48a5a8-1061-4895-b7fe-91a07be33635"></p>
+Openlane has all eda tool and openroad does the floorplanning, placement, CTS, Optimization ,and  Global Routing.
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/e238984c-cdd4-4fd5-9260-5d3ed378eed5"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/fa3c4de1-ca55-46c4-b85f-fbad2e25ba28"></p>
+Enter into openroad and do the timing analysis as open STA is already integrated inside openroad. 
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/e2891673-4057-4afd-96e9-924ad1a2d7c1"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/a80e3f2b-a1ef-4514-b3cc-0c70121cd0fe"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/59e77a87-4570-4028-8061-9b44aaeb6a48"></p>
+Set the current def path before “run_cts”.
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/d4de6d3f-ff84-45d2-bad6-c606a6848b40"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/515ec5c4-fa91-4524-a4a1-f8d582383869"></p>
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/470e00a4-f2fd-4856-a5bb-7e6e76dd6680"></p>
+
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/86d4f865-525e-4fe3-9eb5-39a2cdb7c9fc"></p>
+
+Including the larger size clock buffer in the clock path has improved the result.
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/e19c8abf-81de-4e9e-8b31-b4ebd65a9304"></p>
+<p align="center" width="100%"><img width="425" alt="image" src="https://github.com/Meghashree-H-S/DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING/assets/44599861/de67eb93-37de-49da-8704-364f806bc037"></p>
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Final steps for RTLGDS using tritonRoute and openSTA
 
